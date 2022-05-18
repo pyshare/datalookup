@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]>=6.2.3",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datalookup"
+description = "Deep nested data filtering library"
+authors = [
+    {name = "Stephane Capponi", email = "stephane.capponi@proton.me"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+keywords = [
+    "filter",
+    "dictionary",
+    "nested",
+    "datalookup",
+    "data-filtering",
+    "deep-filtering",
+    "lookup"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+dynamic = ["version", "readme"]
+
+[project.urls]
+homepage = "https://datalookup.readthedocs.io/en/latest/"
+repository = "https://github.com/pyshare/datalookup"
+changelog = "https://github.com/pyshare/datalookup/blob/master/docs/changelog.txt"
+
+[tool.setuptools]
+packages = ["datalookup"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst"]}
+
+[tool.setuptools_scm]
+write_to = "datalookup/_version.py"

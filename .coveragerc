@@ -1,0 +1,7 @@
+[run]
+branch = True
+omit = tests/*
+
+[html]
+title = Datalookup coverage report
+directory = coverage

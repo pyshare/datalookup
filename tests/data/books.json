@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "author": "J. K. Rowling",
+        "books": [
+            {
+                "name": "Harry Potter and the Chamber of Secrets",
+                "genre": "Fantasy",
+                "published": "1998"
+            },
+            {
+                "name": "Harry Potter and the Prisoner of Azkaban",
+                "genre": "Fantasy",
+                "published": "1999"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "author": "Richard Adams",
+        "books": [
+            {
+                "name": "Watership Down",
+                "genre": "Fantasy",
+                "published": "1972"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "author": "Agatha Christie",
+        "books": [
+            {
+                "name": "And Then There Were None",
+                "genre": "Mystery",
+                "published": "1939"
+            }
+        ]
+    }
+]
