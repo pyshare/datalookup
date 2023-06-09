@@ -86,8 +86,8 @@ which comprise a list of authors with the books they wrote.
     ]
 
 **Datalookup** makes it easy to find an author by calling one of the methods
-of the :class:`Dataset` class like :meth:`filter()` or :meth:`exclude()`. There
-are multiple ways to retrieve an author.
+of the :class:`Dataset` class like :meth:`~datalookup.Dataset.filter()` or
+:meth:`~datalookup.Dataset.exclude()`. There are multiple ways to retrieve an author.
 
 Basic filtering
 ---------------
@@ -133,9 +133,9 @@ and a field of the books. Something like ``books__name``.
 AND, OR - filtering
 -------------------
 
-Keyword argument queries - in :meth:`filter()`, etc. - are "AND"ed together.
-If you need to execute more complex queries (for example, queries with OR statements),
-you can combine two filter request with "|".
+Keyword argument queries - in :meth:`~datalookup.Dataset.filter()`, etc. - are
+"AND"ed together. If you need to execute more complex queries
+(for example, queries with OR statements), you can combine two filter request with "|".
 
 .. code-block:: python
 
@@ -177,7 +177,8 @@ Cascade filtering
 -----------------
 
 Sometimes you will want to filter the author but also the related books.
-It is possible to do that by calling the :meth:`on_cascade()` method before filtering.
+It is possible to do that by calling the :meth:`~datalookup.Dataset.on_cascade()`
+method before filtering.
 
 .. code-block:: python
 
@@ -311,7 +312,8 @@ Methods that return new **Dataset**
 
 .. method:: Dataset.on_cascade()
 
-    Must be followed by :meth:`filter()`, :meth:`exclude()` or other filtering
+    Must be followed by :meth:`~datalookup.Dataset.filter()`,
+    :meth:`~datalookup.Dataset.exclude()` or other filtering
     methods (like books.on_cascade().filter(...)). This method will not only
     filter the current dataset but also the related field dataset. Example:
 
