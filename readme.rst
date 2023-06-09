@@ -265,8 +265,8 @@ directory or online at https://datalookup.readthedocs.io/en/latest/
 Contribution
 ============
 
-Anyone can contribute to Datalookup's development if they follow the
-:doc:`/interals/contributing` documentation.
+Anyone can contribute to Datalookup's development. Checkout our documentation on how to
+get involved: `https://datalookup.readthedocs.io/en/latest/internals/contributing.html`
 
 License
 =======
