@@ -238,7 +238,7 @@ Documentation
 =============
 
 Datalookup does not stop here. The full documentation is in the ``docs``
-directory or online at https://datalookup.readthedocs.io/en/latest/
+directory or online at `https://datalookup.readthedocs.io/en/latest/`
 
 Contribution
 ============
