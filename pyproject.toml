@@ -39,7 +39,7 @@ dynamic = ["version", "readme"]
 [project.urls]
 homepage = "https://datalookup.readthedocs.io/en/latest/"
 repository = "https://github.com/pyshare/datalookup"
-changelog = "https://github.com/pyshare/datalookup/blob/master/docs/changelog.txt"
+changelog = "https://github.com/pyshare/datalookup/blob/master/docs/changelog.rst"
 
 [tool.setuptools]
 packages = ["datalookup"]
