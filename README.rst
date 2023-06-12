@@ -200,61 +200,39 @@ As a convenience when no lookup type is provided (like in
     # '__contains' is the lookup
     books.filter(author__contains="Row")
 
-.. list-table:: Title
-    :widths: 25 25 50
-    :header-rows: 1
-
-    * - Lookup
-      - Case-insensitive lookup
-      - Description
-
-    * - exact
-      - iexact
-      - Exact match
-
-    * - contains
-      - icontains
-      - Containment test
-
-    * - in
-      -
-      - In a given iterable; strings (being iterables) are accepted.
-
-    * - gt
-      -
-      - Greater than
-
-    * - gte
-      -
-      - Greater than or equal to
-
-    * - lt
-      -
-      - Lower than
-
-    * - lte
-      -
-      - Lower than or equal to
-
-    * - startswith
-      - istartswith
-      - Starts with a speific string
-
-    * - endswith
-      - iendswith
-      - Ends with a speific string
-
-    * - range
-      -
-      - Range between two values. Integer only
-
-    * - isnull
-      -
-      - Check that a field is null. Takes either True or False
-
-    * - regex
-      - iregex
-      - Regular expression match
++--------------+-------------------------+-----------------------------------------------------------------+
+| Lookup       | Case-insensitive lookup | Description                                                     |
++==============+=========================+=================================================================+
+| exact        | iexact                  | Exact match                                                     |
++--------------+-------------------------+-----------------------------------------------------------------+
+| contains     | icontains               | Containment test                                                |
++--------------+-------------------------+-----------------------------------------------------------------+
+| startswtih   | istartswith             | Starts with a specific string                                   |
++--------------+-------------------------+-----------------------------------------------------------------+
+| endswith     | iendswith               | Ends with a specific string                                     |
++--------------+-------------------------+-----------------------------------------------------------------+
+| regex        | iregex                  | Regular expression match                                        |
++--------------+-------------------------+-----------------------------------------------------------------+
+| in           |                         | In a given iterable; strings (being iterables) are accepted     |
++--------------+-------------------------+-----------------------------------------------------------------+
+| gt           |                         | Grater than                                                     |
++--------------+-------------------------+-----------------------------------------------------------------+
+| gte          |                         | Greater that or equal                                           |
++--------------+-------------------------+-----------------------------------------------------------------+
+| lt           |                         | Lower than                                                      |
++--------------+-------------------------+-----------------------------------------------------------------+
+| lte          |                         | Lower than or equal to                                          |
++--------------+-------------------------+-----------------------------------------------------------------+
+| range        |                         | Range between two values. Integer only                          |
++--------------+-------------------------+-----------------------------------------------------------------+
+| isnull       |                         | Check that a field is null. Takes either True or False          |
++--------------+-------------------------+-----------------------------------------------------------------+
+| contained_by |                         | Check data is a subset of the passed values. ArrayField only    |
++--------------+-------------------------+-----------------------------------------------------------------+
+| overlap      |                         | Data shares any results with the passed values. ArrayField only |
++--------------+-------------------------+-----------------------------------------------------------------+
+| len          |                         | Check length of the array. ArrayField only                      |
++--------------+-------------------------+-----------------------------------------------------------------+
 
 Documentation
 =============
