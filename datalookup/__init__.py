@@ -291,9 +291,11 @@ class Node:
         return "<{}: {}>".format(self.__class__.__name__, self)
 
     def __str__(self):
-        return "{} object ({})".format(
-            self.__class__.__name__, list(self.fields.values())[0].get_value()
-        )
+        try:
+            field_value = list(self.fields.values())[0].get_value()
+        except IndexError:
+            field_value = "None"
+        return "{} object ({})".format(self.__class__.__name__, field_value)
 
     def activate_on_cascade(self):
         """Activate filtering on cascade"""
