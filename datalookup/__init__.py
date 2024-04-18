@@ -218,9 +218,12 @@ class Dataset:
             ]
 
             books = Dataset(data)
-            books.filter(author__exact="J. K. Rowling")
-            books.filter(books__genre__in=["Fantasy"])
+            books.exclude(author__exact="J. K. Rowling")
+            books.exclude(books__genre__in=["Fantasy"])
         """
+        if not kwargs:
+            return self
+
         data: list[Node] = []
         for node in self:
             try:

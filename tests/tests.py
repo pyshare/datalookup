@@ -382,6 +382,11 @@ class FilteringTests:
         assert len(authors) == 1
         assert authors[0].author == "Agatha Christie"
 
+    def test_exclude_empty_kwargs(self, books: Dataset):
+        """If an empty directory is passed, return the full dataset"""
+        authors = books.exclude()
+        assert len(authors) == 3
+
     def test_distinct(self):
         """Check that we correctly remove duplicates"""
         data = [{"test": "test"}, {"test": "test"}, {"hello": "test"}]
